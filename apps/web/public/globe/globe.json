@@ -1,0 +1,24 @@
+{
+  "schema": "seven-servers.lunar-globe.v1",
+  "role": "orbital visualization only",
+  "radius_km": 1737.4,
+  "credit": "NASA Scientific Visualization Studio CGI Moon Kit, SVS 4720. Ernie Wright and Noah Petro. Color is adapted for appearance and is not a science input.",
+  "color": {
+    "file": "moon-color.webp",
+    "width": 4096,
+    "height": 2048,
+    "source": "lroc_color_16bit_srgb_4k.tif",
+    "source_sha256": "9731fa8af425b6c2f88f277ecca82bf8c603f3743894f64ed7b25c5bfefa22ff",
+    "sha256": "a0653bf5b4f508fb58c880549dffb17b51c4e44048f455fae4c227171d5b4baa"
+  },
+  "height": {
+    "file": "moon-height.png",
+    "width": 2048,
+    "height": 1024,
+    "source": "ldem_16_uint.tif",
+    "source_sha256": "45a2b32d56e81ed30db07fead8abc842b249b6511219d9ca2c53f81bc2dc5d62",
+    "sha256": "9768bc964df9ee99c4b9841c4892093958741afcd4dd835d0d060c977010dc6c",
+    "encoding": "h_m = (R * 256 + G) * 0.5 - 10000, relative to the 1737.4 km sphere",
+    "source_units": "unsigned 16-bit half-meters with DN offset +20000 from radius 1727400 m"
+  }
+}

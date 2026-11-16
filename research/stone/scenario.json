@@ -1,0 +1,17 @@
+{
+  "name": "STONE Mobility research scenario",
+  "status": "research scenario, not a consumer mobility product",
+  "depends_on": "site_a visibility run and Star node N1 as a charger",
+  "rover": {
+    "id": "STONE-R1",
+    "energy_wh_per_km": {"value": 250, "status": "assumed"}
+  },
+  "traverse": {
+    "from": "site_a analysis point",
+    "to": "a charger colocated with point-node N1",
+    "distance_km": {"value": 2.0, "status": "assumed"},
+    "energy_wh": {"value": 500, "status": "calculated", "equation": "distance_km * energy_wh_per_km"}
+  },
+  "constraint": "The rover moves only while the charger schedule and stored energy allow it. This scenario does not claim a flight route.",
+  "tasks": ["equipment placement", "maintenance", "supply delivery"]
+}

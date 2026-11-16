@@ -1,0 +1,25 @@
+[project]
+name = "lfl"
+version = "0.1.0"
+description = "Seven Servers Lunar First Light science service"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+  "fastapi",
+  "uvicorn",
+  "pydantic",
+  "httpx",
+  "rasterio",
+  "pyproj",
+  "spiceypy",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

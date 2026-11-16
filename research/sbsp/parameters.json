@@ -1,0 +1,44 @@
+{
+  "study": "NASA OTPS Space-Based Solar Power, NTRS 20240008752",
+  "status": "cited research context, not a Seven Servers operating system",
+  "chain": [
+    "orbital solar collectors",
+    "power conversion",
+    "wireless power transmission",
+    "authorized terrestrial receiving facility",
+    "electrical conversion and storage",
+    "local distribution"
+  ],
+  "cited_findings": [
+    {
+      "name": "RD1 lifecycle cost",
+      "value": 0.61,
+      "unit": "USD/kWh",
+      "status": "cited",
+      "source": "NASA OTPS 2024 SBSP study baseline for the representative heliostat design"
+    },
+    {
+      "name": "RD2 lifecycle cost",
+      "value": 1.59,
+      "unit": "USD/kWh",
+      "status": "cited",
+      "source": "NASA OTPS 2024 SBSP study baseline for the representative planar design"
+    },
+    {
+      "name": "cost ratio versus terrestrial renewables",
+      "value": "about 12 to 80",
+      "status": "cited",
+      "source": "NASA OTPS 2024 SBSP study"
+    }
+  ],
+  "worksheet": {
+    "note": "Each factor below is an assumption until a source is attached. The product is not a commercial-scale energy simulation.",
+    "collection_efficiency": {"value": 0.3, "status": "assumed"},
+    "conversion_efficiency": {"value": 0.85, "status": "assumed"},
+    "wireless_efficiency": {"value": 0.5, "status": "assumed"},
+    "receiver_efficiency": {"value": 0.85, "status": "assumed"},
+    "storage_efficiency": {"value": 0.9, "status": "assumed"},
+    "grid_efficiency": {"value": 0.95, "status": "assumed"}
+  },
+  "separation": "This Earth-orbit chain is not the lunar six-point surface network."
+}

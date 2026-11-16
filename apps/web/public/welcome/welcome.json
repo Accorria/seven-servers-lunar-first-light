@@ -1,0 +1,29 @@
+{
+  "schema": "seven-servers.welcome-stills.v1",
+  "role": "decorative welcome and orbit backdrop; not a science input",
+  "moon": {
+    "file": "moon-disc.webp",
+    "bytes": 60918,
+    "sha256": "879a59fdb518773579f4bb61429821020832d1e3e33d5c933c046f1f852fcc2e",
+    "source": "apps/web/public/globe/moon-color.webp",
+    "credit": "NASA Scientific Visualization Studio CGI Moon Kit, SVS 4720. Ernie Wright and Noah Petro. Projected to a disc for the welcome. Not the published Sun direction."
+  },
+  "earth": {
+    "file": "earth-disc.webp",
+    "bytes": 161386,
+    "sha256": "760a5ee7f62b95a3bd8b7cb29023b63365e328d32319960154f88ce23de62c0b",
+    "source_url": "https://science.nasa.gov/resource/twin-blue-marbles/",
+    "source_file": "ipcc_bluemarble_east_lrg.jpg",
+    "credit": "Eastern-hemisphere Twin Blue Marble. NASA images by Reto St\u00f6ckli, based on data from NASA and NOAA."
+  },
+  "stars": {
+    "file": "stars.webp",
+    "bytes": 92536,
+    "width": 1920,
+    "height": 960,
+    "sha256": "ae55eaf95351490773779153761c50353e225720dde92c0f1e40d1f8c20c1408",
+    "source_url": "https://svs.gsfc.nasa.gov/4851",
+    "source_file": "starmap_2020_4k_gal.exr",
+    "credit": "NASA/Goddard Space Flight Center Scientific Visualization Studio, Deep Star Maps 2020, galactic coordinates. Gaia DR2: ESA/Gaia/DPAC. Constellation figures based on those developed for the IAU by Alan MacRobert of Sky and Telescope (Roger Sinnott and Rick Fienberg). A picture of the catalog sky, not the lunar sky for 1\u20138 November 2026."
+  }
+}

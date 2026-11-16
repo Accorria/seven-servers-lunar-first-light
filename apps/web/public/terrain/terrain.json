@@ -1,0 +1,96 @@
+{
+  "schema": "seven-servers.lunar-terrain.v1",
+  "frame": "MOON_ME",
+  "radius_km": 1737.4,
+  "visualization_only": true,
+  "meshes": [
+    {
+      "id": "regional",
+      "file": "regional.bin",
+      "source_path": "data/dems/ldem_75s_240m.img",
+      "source_name": "ldem_75s_240m.img",
+      "source_sha256": "d031efe2611b17dfbf3c158f5e15dc04cd5719349dcbf6384bb21fd97697c490",
+      "source_pixel_m": 240.0,
+      "drawn_pixel_m": 1192.8031290743156,
+      "stride": 5,
+      "bounds_m": {
+        "min_x_m": -457200.0,
+        "max_x_m": 457680.0,
+        "min_y_m": -457680.0,
+        "max_y_m": 457200.0
+      },
+      "frame": "MOON_ME",
+      "radius_km": 1737.4,
+      "citation": "LRO LOLA Gridded Data Record, PDS Geosciences Node. Height is meters above the 1737.4 km reference sphere.",
+      "triangles": 1179648,
+      "note": "South of 75\u00b0S from ldem_75s_240m, drawn near 1.2 km for the approach. Not a horizon.",
+      "encoding": "LFLM float32 xyz kilometres, uint32 indices, skirt 6 km"
+    },
+    {
+      "id": "site01_parent",
+      "file": "site01-parent.bin",
+      "source_path": "data/dems/Site01_final_adj_5mpp_surf.tif",
+      "source_name": "Site01_final_adj_5mpp_surf.tif",
+      "source_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+      "source_pixel_m": 5.0,
+      "drawn_pixel_m": 50.0,
+      "stride": 10,
+      "bounds_m": {
+        "min_x_m": -19000.0,
+        "max_x_m": -3000.0,
+        "min_y_m": -20000.0,
+        "max_y_m": -4000.0
+      },
+      "frame": "MOON_ME",
+      "radius_km": 1737.4,
+      "citation": "Barker, M.K., et al. (2021), Improved LOLA Elevation Maps for South Pole Landing Sites, Planetary and Space Science 203, 105119. PGDA product 78, Site01 Connecting ridge, 5 m/pixel, MOON_ME of DE421.",
+      "triangles": 206082,
+      "note": "Whole Site01 tile, decimated. The 5 m patch is the landing surface.",
+      "encoding": "LFLM float32 xyz kilometres, uint32 indices, skirt 6 km"
+    },
+    {
+      "id": "site01_patch",
+      "file": "site01-patch.bin",
+      "source_path": "data/dems/Site01_final_adj_5mpp_surf.tif",
+      "source_name": "Site01_final_adj_5mpp_surf.tif",
+      "source_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+      "source_pixel_m": 5.0,
+      "drawn_pixel_m": 5.0,
+      "stride": 1,
+      "bounds_m": {
+        "min_x_m": -12322.5,
+        "max_x_m": -10822.5,
+        "min_y_m": -13222.5,
+        "max_y_m": -11722.5
+      },
+      "frame": "MOON_ME",
+      "radius_km": 1737.4,
+      "citation": "Barker, M.K., et al. (2021), Improved LOLA Elevation Maps for South Pole Landing Sites, Planetary and Space Science 203, 105119. PGDA product 78, Site01 Connecting ridge, 5 m/pixel, MOON_ME of DE421.",
+      "triangles": 182400,
+      "note": "Native 5 m patch, 1.5 km across, centered on the published Site01 pixel. Panel may say 5 m LDEM.",
+      "encoding": "LFLM float32 xyz kilometres, uint32 indices, skirt 6 km"
+    },
+    {
+      "id": "mouton",
+      "file": "mouton.bin",
+      "source_path": "data/dems/ldem_75s_240m.img",
+      "source_name": "ldem_75s_240m.img",
+      "source_sha256": "d031efe2611b17dfbf3c158f5e15dc04cd5719349dcbf6384bb21fd97697c490",
+      "source_pixel_m": 240.0,
+      "drawn_pixel_m": 240.0,
+      "stride": 1,
+      "bounds_m": {
+        "min_x_m": 64237.95447974428,
+        "max_x_m": 104317.95447974428,
+        "min_y_m": 120301.7839929914,
+        "max_y_m": 160381.7839929914
+      },
+      "frame": "MOON_ME",
+      "radius_km": 1737.4,
+      "citation": "LRO LOLA Gridded Data Record, PDS Geosciences Node. Height is meters above the 1737.4 km reference sphere.",
+      "triangles": 57114,
+      "note": "Mons Mouton window at the source 240 m spacing of ldem_75s_240m. Site20 does not contain the IAU feature center and is not this surface.",
+      "encoding": "LFLM float32 xyz kilometres, uint32 indices, skirt 6 km"
+    }
+  ]
+}

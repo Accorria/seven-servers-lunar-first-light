@@ -1,0 +1,33 @@
+{
+  "source_report_hash": "dba4eb48f56fad5b2a7dbbc5a8cf558743f30f698d53210def97cfbef04eb2b3",
+  "classical": {
+    "configurations": 64,
+    "sunlight_fraction": 1.0,
+    "best_mask": 1,
+    "best_shortfall_j": 0.0,
+    "best_delivered_j": 172800000.0,
+    "objective": "minimize shortfall joules",
+    "facilities_present": [
+      "F_POS",
+      "F_NEG"
+    ]
+  },
+  "quantum": {
+    "status": "simulator",
+    "package": "qdk",
+    "version": "1.34.0",
+    "simulator": "sparse",
+    "smoke_shots": 8,
+    "circuit": "p=1 QAOA, phase on the all-off state, Rx mixer, gamma=1.2, beta=0.4",
+    "shots": 64,
+    "sampled_mask": 7,
+    "sampled_objective_shortfall_j": 0.0,
+    "exhaustive_optimum_mask": 1,
+    "exhaustive_optimum_shortfall_j": 0.0,
+    "objective_ratio_sampled_over_optimum": null,
+    "sample_met_optimum_shortfall": true,
+    "hardware_job": null,
+    "advantage_claimed": false
+  },
+  "note": "Hardware fields stay empty. A quantum result is shown only when this file records a completed simulator run."
+}

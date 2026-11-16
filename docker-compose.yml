@@ -1,0 +1,17 @@
+services:
+  science:
+    build:
+      context: .
+      dockerfile: services/science/Dockerfile
+    ports:
+      - "8000:8000"
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      SCIENCE_ORIGIN: http://science:8000
+    depends_on:
+      - science

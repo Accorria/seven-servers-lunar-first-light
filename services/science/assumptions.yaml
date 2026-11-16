@@ -1,0 +1,29 @@
+reference_radius_km:
+  value: 1737.4
+  status: cited
+  source: LOLA GDR A_AXIS_RADIUS
+solar_constant_w_m2:
+  value: 1361
+  status: cited
+  source: nominal solar constant pending a pinned TSIS product
+photovoltaic_efficiency:
+  value: 0.30
+  status: assumed
+battery_wh:
+  value: 5000
+  status: assumed
+charge_efficiency:
+  value: 0.95
+  status: assumed
+discharge_efficiency:
+  value: 0.95
+  status: assumed
+distribution_loss_fraction:
+  value: 0.02
+  status: assumed
+facility_demand_w:
+  value: 250
+  status: assumed
+stone_wh_per_km:
+  value: 250
+  status: assumed

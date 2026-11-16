@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --bg: #070b12;
+  --panel: #121a27;
+  --line: #2a384c;
+  --gold: #d7b57a;
+  --cyan: #8fd8df;
+  --text: #e8eef6;
+  --muted: #93a4ba;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 500px at 10% -10%, #1a2740 0%, var(--bg) 55%);
+  color: var(--text);
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.mono { font-family: "IBM Plex Mono", "ui-monospace", monospace; }
+
+.welcome-stars {
+  position: absolute;
+  inset: 0;
+  background: url("/welcome/stars.webp") center / cover no-repeat;
+}
+
+.welcome-earth,
+.welcome-moon {
+  position: absolute;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+.welcome-earth {
+  width: min(46vw, 560px);
+  left: 6%;
+  top: 14%;
+}
+
+.welcome-moon {
+  width: min(30vw, 380px);
+  right: 8%;
+  bottom: 10%;
+  animation: welcome-moon-drift 72s ease-in-out infinite alternate;
+}
+
+.welcome-vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, transparent 0%, rgba(5, 7, 12, 0.28) 55%, rgba(5, 7, 12, 0.62) 100%);
+  pointer-events: none;
+}
+
+.welcome-panel {
+  background: rgba(5, 7, 12, 0.62);
+  border: 1px solid rgba(215, 181, 122, 0.28);
+  border-radius: 16px;
+  padding: 1.5rem 1.75rem;
+}
+
+.welcome-credit {
+  margin: 0 auto 0.75rem;
+  max-width: 42rem;
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.dial-arm {
+  transform-origin: 50% 100%;
+  transition: transform 700ms linear;
+}
+
+@keyframes welcome-moon-drift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-12px, 16px, 0); }
+}
+
+@media (max-width: 700px) {
+  .welcome-earth { width: 52vw; left: -8%; top: 6%; }
+  .welcome-moon { width: 40vw; right: -6%; bottom: 4%; }
+  .welcome-credit { font-size: 10px; }
+}
+
+.clearance-bar {
+  width: 0;
+  background: var(--gold);
+  animation: clearance-fill 2.6s linear forwards;
+}
+
+.visitor-fade {
+  animation: visitor-fade 4.5s ease forwards;
+}
+
+@keyframes clearance-fill {
+  to { width: 100%; }
+}
+
+@keyframes visitor-fade {
+  0% { opacity: 0; }
+  12% { opacity: 1; }
+  70% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-moon { animation: none; }
+  .dial-arm { transition: none; }
+  .clearance-bar { animation: none; width: 100%; }
+  .visitor-fade { animation: none; opacity: 1; }
+}

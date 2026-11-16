@@ -1,0 +1,44 @@
+{
+  "sites": [
+    {
+      "id": "site_a",
+      "name": "Shackleton–de Gerlache Connecting Ridge",
+      "latitude_deg": -89.43890921454619,
+      "longitude_deg": 222.85643000554958,
+      "analyzed": true,
+      "citation": "Barker et al. 2021, PGDA product 78, Site01. Highest valid pixel."
+    },
+    {
+      "id": "site_b",
+      "name": "Mons Mouton",
+      "latitude_deg": -84.6,
+      "longitude_deg": 31.0,
+      "analyzed": true,
+      "citation": "USGS Gazetteer, IAU feature 16070, adopted 2022-05-13. Not a NASA landing coordinate."
+    },
+    {
+      "id": "shackleton_rim",
+      "name": "Shackleton rim",
+      "latitude_deg": -89.5,
+      "longitude_deg": 0.0,
+      "analyzed": false,
+      "citation": "Named polar feature for location search. Visibility is not computed until a live job returns."
+    },
+    {
+      "id": "de_gerlache",
+      "name": "de Gerlache rim",
+      "latitude_deg": -88.5,
+      "longitude_deg": 270.0,
+      "analyzed": false,
+      "citation": "Named polar feature. Approximate location for the catalog, not a landing point."
+    },
+    {
+      "id": "haworth",
+      "name": "Haworth",
+      "latitude_deg": -87.5,
+      "longitude_deg": 355.0,
+      "analyzed": false,
+      "citation": "Named crater near the south pole. Visibility is not computed."
+    }
+  ]
+}
